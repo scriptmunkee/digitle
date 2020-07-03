@@ -1,0 +1,41 @@
+
+
+.landing-wrapper   {
+    /*    height:100vh;*/
+    /*    background: url(../img/background-header.mp4); */
+}
+
+.background-wrapper{
+    width: 100vw; /* Could also use width: 100%; */
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;   
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+img{
+    display: block;
+}
+
+.logo-wrapper-placement{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(0.3rem, 1fr)); 
+    grid-auto-rows: 0.4fr;
+    grid-gap:0.5rem;
+}
+
+.logo-wrapper-placement>li{
+    grid-row:15/16;
+    grid-column: -1/13;
+}
+
+.logo{
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    max-width: 18rem;
+}
+
