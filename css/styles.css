@@ -1,11 +1,8 @@
+/* ==========================================================================
+Landing Page settings including media queries
+========================================================================== */
 
-
-.landing-wrapper   {
-    /*    height:100vh;*/
-    /*    background: url(../img/background-header.mp4); */
-}
-
-.background-wrapper{
+.video-background-wrapper{
     width: 100vw; /* Could also use width: 100%; */
     height: 100vh;
     object-fit: cover;
@@ -14,28 +11,42 @@
     top: 0px;
     z-index: -1;
 }
-img{
-    display: block;
+
+.header-wrapper{
+
 }
 
-.logo-wrapper-placement{
+.logo-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(0.3rem, 1fr)); 
-    grid-auto-rows: 0.4fr;
-    grid-gap:0.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    grid-auto-rows: 1fr;
 }
 
-.logo-wrapper-placement>li{
-    grid-row:15/16;
-    grid-column: -1/13;
+.logo-wrapper>.logo{
+    grid-column: 2/3;
+    grid-row: 2;
+    justify-self: end;
 }
 
 .logo{
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-    max-width: 18rem;
+    max-width: 5rem;
 }
 
+.logo-wrapper>h1{
+    grid-column: 1;
+    grid-row: 1;
+    grid-column-span:2;
+    column-span: 2;
+    color: white;
+}
+/*
+
+@media screen and (max-height: 1024) {
+    .logo-wrapper-placement>li{
+        grid-column: 2/3;
+        grid-row: 3;
+        justify-self: end;
+    }   
+}
+*/
